@@ -12,6 +12,11 @@ Let your visitors share a like on your website, keep track of downloads and coun
 <script src="love-btn.js" defer></script>
 ```
 
+**JCC use Axios**
+```html
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js" defer></script>
+```
+
 ```html
 <!-- YOURFILE.html -->
 <button
