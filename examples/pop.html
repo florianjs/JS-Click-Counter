@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"
+      defer
+    ></script>
+    <script src="../js/love-pop.js" defer></script>
+    <link rel="../js/stylesheet" href="../styles/love.css" />
+    <title>Send Love - JavaScript plugin</title>
+  </head>
+  <body class="bg-gray-900 text-white h-screen">
+    <div
+      class="container mx-auto w-full my-auto justify-center items-center flex flex-col"
+    >
+      <nav class="py-16">
+        <ul class="flex justify-evenly uppercase">
+          <li class="px-4 font-bold">
+            Examples:
+          </li>
+          <li class="px-4 hover:text-gray-800">
+            <a href="../index.html">Classic Button</a>
+          </li>
+          <li class="px-4 hover:text-gray-800">
+            <a href="pop.html">Popup</a>
+          </li>
+        </ul>
+      </nav>
+
+      <h1 class="font-xl italic my-16">(Wait 5 seconds)</h1>
+
+      <h2 id="love-counter" class="text-xl"></h2>
+      <div class="h-screen w-0"></div>
+      <div class="h-screen w-0"></div>
+      <div class="h-screen w-0"></div>
+    </div>
+
+    <div
+      id="love-box"
+      style="
+        visibility: hidden;
+        position: sticky;
+        bottom: 0;
+        right: 0;
+        padding: 1rem;
+      "
+      class="flex p-4"
+    >
+      <button
+        id="love"
+        class="mx-2 px-4 py-2 bg-gray-800 shadow-md rounded-md text-lg focus:outline-none hover:bg-red-500"
+      >
+        Send some ❤️
+      </button>
+      <button id="no-thanks" class="text-xs px-4 focus:outline-none">
+        No Thanks
+      </button>
+    </div>
+  </body>
+</html>

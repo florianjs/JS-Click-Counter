@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"
+      defer
+    ></script>
+    <script src="js/love-btn.js" defer></script>
+    <script src="js/download-btn.js" defer></script>
+    <title>Send Love - JavaScript plugin</title>
+  </head>
+  <body class="bg-gray-900 text-white w-screen h-screen">
+    <div
+      class="container mx-auto w-full h-full justify-center items-center flex flex-col"
+    >
+      <nav class="py-16">
+        <ul class="flex justify-evenly uppercase">
+          <li class="px-4 font-bold">
+            Examples:
+          </li>
+          <li class="px-4 hover:text-gray-800">
+            <a href="index.html">Classic Button</a>
+          </li>
+          <li class="px-4 hover:text-gray-800">
+            <a href="examples/pop.html">Popup</a>
+          </li>
+        </ul>
+      </nav>
+      <h1 class="pt-8 text-2xl font-light">
+        Let users show how much they love your website :
+      </h1>
+
+      <button
+        id="love-btn"
+        class="p-4 my-4 bg-gray-800 shadow-md rounded-md text-2xl w-64 focus:outline-none hover:bg-white hover:text-gray-900"
+      >
+        Send some ❤️
+      </button>
+      <h2 id="love-counter" class="text-xl font-bold"></h2>
+      <h1 class="pt-8 text-2xl font-light">Keep track of your downloads :</h1>
+      <button
+        id="download-btn"
+        class="flex justify-evenly items-center p-4 my-4 bg-gray-800 shadow-md rounded-md text-2xl w-64 focus:outline-none hover:bg-white hover:text-gray-900"
+      >
+        Download
+        <h2 id="download-counter" class="text-xl"></h2>
+      </button>
+    </div>
+  </body>
+</html>
